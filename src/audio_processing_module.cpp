@@ -42,6 +42,12 @@ AudioProcessingModule::AudioProcessingModule(int aec_type, bool enable_ns, int a
         // config.high_pass_filter.enabled = true;
         // config.echo_canceller3.enabled = true;
         // ap->ApplyConfig(config);
+    } else if (8 == aec_type) {
+        ap->echo_cancellation()->Enable(true);
+        ap->echo_cancellation()->set_suppression_level(EchoCancellation::kModerateSuppression);
+    } else if (9 == aec_type) {
+        ap->echo_cancellation()->Enable(true);
+        ap->echo_cancellation()->set_suppression_level(EchoCancellation::kHighSuppression);
     }
 
 

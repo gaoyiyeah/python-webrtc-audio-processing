@@ -25,7 +25,7 @@ include_dirs = ['src', 'webrtc-audio-processing']
 libraries = ['pthread', 'stdc++']
 
 define_macros = [
-    ('WEBRTC_LINUX', None),
+    ('WEBRTC_MAC', None),
     ('WEBRTC_POSIX', None),
     ('WEBRTC_NS_FLOAT', None),
     ('WEBRTC_AUDIO_PROCESSING_ONLY_BUILD', None)

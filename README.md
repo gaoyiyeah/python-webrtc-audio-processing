@@ -13,7 +13,7 @@ Python binding of WebRTC Audio Processing.
 ## Build
 There are two way to build the package.
 
-1. using setup.py
+1. using setup.py(not recommended)
 
     ```
     git clone https://github.com/xiongyihui/python-webrtc-audio-processing.git
